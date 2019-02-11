@@ -90,6 +90,10 @@ call candle#highlight('Title', 'foreground', '', '')
 call candle#highlight('Todo', 'background', 'comment', '')
 call candle#highlight('Underlined', 'blue', '', 'underline')
 
+if has('gui_running')
+  call candle#highlight('Search', 'yellow', 'dark_yellow', 'underline')
+endif
+
 
 "=== vim
 "==============================================================================================
@@ -134,6 +138,12 @@ call candle#highlight('rubyRegexpEscape', 'aqua', '', '')
 call candle#highlight('rubyRegexpSpecial', 'aqua', '', '')
 call candle#highlight('rubyStringDelimiter', 'green', '', '')
 call candle#highlight('rubySymbol', 'red', '', '')
+
+if has('gui_running')
+  call candle#highlight('rubyRegexpAnchor', 'dark_aqua', '', '')
+  call candle#highlight('rubyRegexpDot', 'dark_aqua', '', '')
+  call candle#highlight('rubyRegexpEscape', 'dark_aqua', '', '')
+endif
 
 
 "=== coffee
@@ -217,3 +227,9 @@ call candle#highlight('diffAdded', 'green', '', '')
 call candle#highlight('diffRemoved', 'red', '', '')
 " call candle#highlight('diffChange', '', '', '')
 call candle#highlight('diffText', 'blue', '', '')
+
+if has('gui_running')
+  call candle#highlight('diffAdded', 'green', 'dark_green', '')
+  call candle#highlight('diffRemoved', 'red', 'dark_red', '')
+  call candle#highlight('diffText', 'blue', 'dark_blue', '')
+endif
