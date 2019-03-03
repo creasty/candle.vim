@@ -62,7 +62,7 @@ if has('gui_running')
   call candle#highlight('DiffChange', 'purple', 'dark_purple', 'none')
   call candle#highlight('DiffDelete', 'red', 'dark_red', 'none')
   call candle#highlight('DiffText', 'blue', 'dark_blue', 'none')
-  call candle#highlight('Search', 'yellow', 'dark_yellow', 'reverse,underline')
+  call candle#highlight('Search', 'dark_yellow', 'yellow', 'reverse,underline')
 endif
 
 
