@@ -37,7 +37,7 @@ call candle#highlight('PmenuSel', 'foreground', 'selection', 'reverse')
 " call candle#highlight('PmenuThumb', '', '', '') " TODO
 call candle#highlight('Question', 'green', '', 'standout')
 " call candle#highlight('QuickFixLine', '', '', '') " TODO
-call candle#highlight('Search', 'yellow', 'background', 'reverse,underline')
+call candle#highlight('Search', 'background', 'yellow', 'underline')
 call candle#highlight('SignColumn', 'foreground', 'background', 'none')
 call candle#highlight('SpecialKey', 'line', '', 'bold')
 call candle#highlight('SpellBad', 'red', '', 'undercurl')
@@ -54,7 +54,7 @@ call candle#highlight('TabLineSel', 'window', 'foreground', 'none')
 call candle#highlight('Title', 'foreground', '', 'bold')
 call candle#highlight('VertSplit', 'window', 'window', 'none')
 call candle#highlight('Visual', '', 'selection', 'none')
-call candle#highlight('WarningMsg', 'red', '', 'standout')
+call candle#highlight('WarningMsg', 'red', '', 'none')
 call candle#highlight('WildMenu', 'background', 'yellow', 'standout')
 
 if has('gui_running')
@@ -62,7 +62,7 @@ if has('gui_running')
   call candle#highlight('DiffChange', 'purple', 'dark_purple', 'none')
   call candle#highlight('DiffDelete', 'red', 'dark_red', 'none')
   call candle#highlight('DiffText', 'blue', 'dark_blue', 'none')
-  call candle#highlight('Search', 'dark_yellow', 'yellow', 'reverse,underline')
+  call candle#highlight('Search', 'yellow', 'dark_yellow', 'underline')
 endif
 
 
