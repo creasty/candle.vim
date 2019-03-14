@@ -107,7 +107,7 @@ call candle#highlight('SpecialComment', 'green', '', '')
 " call candle#highlight('Debug', '', '', '') " TODO
 
 call candle#highlight('Underlined', 'blue', '', 'underline')
-call candle#highlight('Error', 'background', 'red', 'reverse')
+call candle#highlight('Error', 'red', 'background', 'reverse')
 call candle#highlight('Todo', 'background', 'comment', 'none')
 
 
