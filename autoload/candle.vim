@@ -24,7 +24,7 @@ let s:palette = {
   \ 'bright_aqua':   ['8aaaa5', 14],
   \
   \ 'orange':        ['bc8d6d', 137],
-  \ 'dark_orange':   ['573f2e', 94],
+  \ 'dark_orange':   ['573f2e', -1],
   \
   \ 'dark_red':      ['503131', -1],
   \ 'dark_green':    ['4c4b30', -1],

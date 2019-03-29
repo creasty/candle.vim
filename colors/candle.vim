@@ -37,7 +37,7 @@ call candle#highlight('PmenuSel', 'foreground', 'selection', 'reverse')
 " call candle#highlight('PmenuThumb', '', '', '') " TODO
 call candle#highlight('Question', 'green', '', 'standout')
 " call candle#highlight('QuickFixLine', '', '', '') " TODO
-call candle#highlight('Search', 'background', 'yellow', 'underline')
+call candle#highlight('Search', 'background', 'yellow', 'bold')
 call candle#highlight('SignColumn', 'foreground', 'background', 'none')
 call candle#highlight('SpecialKey', 'line', '', 'bold')
 call candle#highlight('SpellBad', 'red', '', 'undercurl')
@@ -62,7 +62,6 @@ if has('gui_running')
   call candle#highlight('DiffChange', 'purple', 'dark_purple', 'none')
   call candle#highlight('DiffDelete', 'red', 'dark_red', 'none')
   call candle#highlight('DiffText', 'blue', 'dark_blue', 'none')
-  call candle#highlight('Search', 'yellow', 'dark_yellow', 'underline')
 endif
 
 
