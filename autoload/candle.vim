@@ -44,8 +44,8 @@ function! candle#highlight(group, fg, bg, attr) abort
     let l:fg = s:palette[a:fg]
     let l:options .= ' guisp=#' . l:fg[0]
     let l:options .= ' gui=undercurl'
-    let l:options .= ' term=reverse,underline'
-    let l:options .= ' cterm=reverse,underline'
+    let l:options .= ' term=underline'
+    let l:options .= ' cterm=underline'
   else
     if a:fg !=# ''
       let l:fg = s:palette[a:fg]
