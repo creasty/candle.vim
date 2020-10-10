@@ -47,7 +47,9 @@ function! candle#highlight(group, fg, bg, attr) abort
     let l:options .= ' term=underline'
     let l:options .= ' cterm=underline'
   else
-    if a:fg !=# ''
+    if a:fg ==# 'none'
+      let l:options .= ' guifg=none ctermfg=none'
+    elseif a:fg !=# ''
       let l:fg = s:palette[a:fg]
       let l:options .= ' guifg=#' . l:fg[0]
       if l:fg[1] > 0
@@ -55,7 +57,9 @@ function! candle#highlight(group, fg, bg, attr) abort
       endif
     endif
 
-    if a:bg !=# ''
+    if a:bg ==# 'none'
+      let l:options .= ' guibg=none ctermbg=none'
+    elseif a:bg !=# ''
       let l:bg = s:palette[a:bg]
       let l:options .= ' guibg=#' . l:bg[0]
       if l:bg[1] > 0
